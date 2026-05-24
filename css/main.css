@@ -40,7 +40,6 @@
   font-size: 24px;
   padding: 20px;
   margin: 30px 1% 0;
-  display: none;
 }
 @media (max-width: 767px) {
   /*Mobile and taplet rules*/
@@ -54,27 +53,36 @@
 
 /* End Header */
 @media (max-width: 767px) {
-  /*Mobile and taplet rules*/
-  .visible-xs{
+  /*Mobile and taplet rules (xs)*/
+  .visible-xs {
     display: block !important;
   }
 }
-@media (min-width: 768px) {
-  /*Small screens*/
+@media (min-width: 768px) and (max-width: 991px) {
+  /*Small screens (sm)*/
   .container {
     width: 750px;
   }
+  .visible-sm {
+    display: block !important;
+  }
 }
-@media (min-width: 992px) {
-  /*medium screens*/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /*medium screens (md)*/
   .container {
     width: 970px;
   }
+  .visible-md {
+    display: block !important;
+  }
 }
 @media (min-width: 1200px) {
-  /*large screens*/
+  /*large screens (lg)*/
   .container {
     width: 1170px;
+  }
+  .visible-lg {
+    display: block !important;
   }
 }
 
@@ -90,6 +98,11 @@
 .clearfix {
   clear: both;
 }
-.vis
+.visible-xs,
+.visible-sm,
+.visible-md,
+.visible-lg {
+  display: none;
+}
 
 /* End framework */
