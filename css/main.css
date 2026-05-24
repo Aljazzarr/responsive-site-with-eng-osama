@@ -1,4 +1,12 @@
+/* Start Global rules */
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* End Global rules */
+
 /* Start Header */
+
 .header {
   background: url(../images/header.jpg) no-repeat top center;
   background-size: cover;
@@ -14,23 +22,74 @@
   color: white;
   background-color: rgba(3, 67, 245, 0.5);
 }
-
-/* End Header */
-/* Start framework */
-.text-center {
-  text-align: center;
+.header .overlay h1 {
+  font-size: 60px;
+  margin-top: 100px;
 }
-/* End framework */
-
+.header .overlay .plan {
+  border: 4px solid #fff;
+  font-size: 24px;
+  width: 48%;
+  float: left;
+  padding: 20px;
+  margin-right: 1%;
+  margin-left: 1%;
+}
+.header .overlay .order {
+  border: 4px solid #fff;
+  font-size: 24px;
+  padding: 20px;
+  margin: 30px 1% 0;
+  display: none;
+}
 @media (max-width: 767px) {
   /*Mobile and taplet rules*/
+  .header .overlay .plan {
+    float: none;
+    margin-bottom: 20px;
+    margin: 0 auto 20px;
+    font-size: 26px;
+  }
+}
+
+/* End Header */
+@media (max-width: 767px) {
+  /*Mobile and taplet rules*/
+  .visible-xs{
+    display: block !important;
+  }
 }
 @media (min-width: 768px) {
   /*Small screens*/
+  .container {
+    width: 750px;
+  }
 }
 @media (min-width: 992px) {
   /*medium screens*/
+  .container {
+    width: 970px;
+  }
 }
 @media (min-width: 1200px) {
   /*large screens*/
+  .container {
+    width: 1170px;
+  }
 }
+
+/* Start framework */
+.container {
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.text-center {
+  text-align: center;
+}
+.clearfix {
+  clear: both;
+}
+.vis
+
+/* End framework */
