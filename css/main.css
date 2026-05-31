@@ -55,6 +55,15 @@
 }
 
 /* End Header */
+/* Start features */
+.features {
+}
+.features .feat {
+  float: left;
+  width: 33.3333333%;
+  padding: 20px;
+}
+/* End features */
 /* Start media queries */
 @media (max-width: 767px) {
   /*Mobile and taplet rules (xs)*/
