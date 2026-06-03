@@ -201,6 +201,23 @@ body {
 }
 
 /* End Pricing table */
+/* Start what they say */
+.they-say {
+  padding: 50px 0;
+}
+.they-say .h1 {
+  font-size: 50px;
+  margin: 0 0 20px;
+  color: #777;
+}
+.they-say .person-say {
+  background-color: #eee;
+  padding: 20px;
+  margin: 0 0 20px;
+  border: 1px solid #ddd;
+}
+
+/* END what they say */
 /* Start media queries */
 @media (max-width: 767px) {
   /*Mobile and taplet rules (xs)*/
