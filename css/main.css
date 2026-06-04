@@ -5,7 +5,7 @@
 }
 body {
   font-family: "Noto Sans", sans-serif;
-  height: 3000px;
+  height: 5000px;
 }
 /* End Global rules */
 
@@ -215,6 +215,43 @@ body {
   padding: 20px;
   margin: 0 0 20px;
   border: 1px solid #ddd;
+  border-radius: 10px;
+}
+.they-say .person-say .avatar {
+  width: 120px;
+  overflow: hidden;
+  margin-right: 20px;
+}
+.they-say .person-say .avatar img {
+  width: 100px;
+}
+
+.they-say .person-say h3 {
+  margin: 5px 0 10px;
+}
+.they-say .person-say p {
+  margin: 0;
+  line-height: 1.8;
+  width: calc(100% - 140px);
+}
+
+@media (min-width: 768px) {
+  .they-say .person-say:first-of-type {
+    width: 100%;
+  }
+  .they-say .person-say:not(:first-of-type) {
+    width: 49%;
+  }
+  .they-say .person-say:last-of-type {
+    margin-left: 2%;
+  }
+}
+
+@media (min-width: 992px) {
+  .they-say .person-say:first-of-type {
+    width: 80%;
+    margin-left: 10%;
+  }
 }
 
 /* END what they say */
