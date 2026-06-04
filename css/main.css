@@ -347,4 +347,12 @@ body {
   padding: 0;
   list-style: none;
 }
+.img-circle {
+  border-radius: 50%;
+}
+.img-thumbnail {
+  padding: 3px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
 /* End framework */
