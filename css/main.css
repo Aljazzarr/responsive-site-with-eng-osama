@@ -118,6 +118,11 @@ body {
 }
 /* End about us */
 /* Start our works */
+.our-works .h1 {
+  font-size: 50px;
+  color: #555;
+}
+
 .our-works .image {
 }
 .our-works .image img {
@@ -201,38 +206,54 @@ body {
 }
 
 /* End Pricing table */
-/* Start what they say */
+/* Start What They Say */
+
 .they-say {
   padding: 50px 0;
 }
+
 .they-say .h1 {
   font-size: 50px;
-  margin: 0 0 20px;
-  color: #777;
+  margin: 0 0 30px;
+  color: #555;
 }
+
 .they-say .person-say {
   background-color: #eee;
   padding: 20px;
-  margin: 0 0 20px;
+  margin: 0 0 25px;
   border: 1px solid #ddd;
   border-radius: 10px;
 }
+
 .they-say .person-say .avatar {
   width: 120px;
-  overflow: hidden;
   margin-right: 20px;
-}
-.they-say .person-say .avatar img {
-  width: 100px;
 }
 
 .they-say .person-say h3 {
   margin: 5px 0 10px;
 }
+
 .they-say .person-say p {
   margin: 0;
-  line-height: 1.8;
+  line-height: 1.7;
   width: calc(100% - 140px);
+}
+
+@media (max-width: 767px) {
+  .they-say .person-say .avatar {
+    float: none;
+    margin: auto;
+  }
+  .they-say .person-say h3 {
+    float: none;
+    text-align: center;
+  }
+  .they-say .person-say p {
+    float: none;
+    width: 100%;
+  }
 }
 
 @media (min-width: 768px) {
@@ -247,6 +268,21 @@ body {
   }
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+  .they-say .person-say:not(:first-of-type) .avatar {
+    float: none;
+    margin: auto;
+  }
+  .they-say .person-say:not(:first-of-type) h3 {
+    float: none;
+    text-align: center;
+  }
+  .they-say .person-say:not(:first-of-type) p {
+    float: none;
+    width: 100%;
+  }
+}
+
 @media (min-width: 992px) {
   .they-say .person-say:first-of-type {
     width: 80%;
@@ -254,7 +290,41 @@ body {
   }
 }
 
-/* END what they say */
+/* End What They Say */
+/* Start Information */
+.information {
+  background-color: #ececec;
+  padding: 30px 0;
+  font-size: 18px;
+}
+.information .h1 {
+  font-size: 50px;
+  color: #848484;
+}
+.information .info-list li {
+  display: inline-block;
+  background-color: #ddd;
+  padding: 10px;
+  padding: 15px;
+  font-size: 22px;
+  cursor: pointer;
+}
+.information .info-list li.sellected {
+  background-color: #fff;
+}
+.information .info-content {
+  margin-bottom: 30px;
+}
+.information .info-content > div {
+  padding: 20px;
+  background-color: #fff;
+  line-height: 2;
+}
+.information .info-content > div:not(:first-of-type) {
+  display: none;
+}
+
+/* End Information */
 /* Start media queries */
 @media (max-width: 767px) {
   /*Mobile and taplet rules (xs)*/
