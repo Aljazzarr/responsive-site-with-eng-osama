@@ -311,6 +311,7 @@ body {
 }
 .information .info-list li.sellected {
   background-color: #fff;
+  color: #22a922;
 }
 .information .info-content {
   margin-bottom: 30px;
